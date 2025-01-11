@@ -1,6 +1,5 @@
 import { Application } from "oak";
-import router from "./routes/userRoutes.ts";
-import { logger } from "./logger.ts";
+import router from "./routes/userRoutes.ts"; 
 
 const app = new Application();
 
