@@ -9,7 +9,7 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
-    command: ["deno", "run", "--allow-net", "--allow-env", "--allow-read", "--allow-write", "src/server.ts"]
+    command: ["deno", "run", "--allow-net", "--allow-env", "--allow-read", "--allow-write", "--import-map=src/import_map.json","src/server.ts"]
     depends_on:
       - mongo
     environment:
